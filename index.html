@@ -19,11 +19,11 @@
             font-family: 'Inter', system-ui, sans-serif;
         }
         
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 31, 63, 0.45), rgba(0, 31, 63, 0.55)), url('./hero.png')
-            background-size: cover;
-            background-position: center;
-        }
+        .hero-bg { background: linear-gradient(rgba(0, 31, 63, 0.45), rgba(0, 31, 63, 0.55)), url("hero.png");
+                   background-size: cover;
+                   background-position: center;
+                   background-repeat: no-repeat;
+}
         
         .nav-link {
             position: relative;
@@ -404,7 +404,7 @@
     <!-- Logo Section -->
     <div class="flex-1">
       <div class="flex items-center gap-3 mb-6">
-        <img src="logo.png" class="h-14 w-auto bg-red-500 p-1 rounded-lg">
+        <img src="logo.png">
              alt="Akshar Elec Logo" 
              class="h-14 w-auto bg-white p-1 rounded-lg">
         <span class="text-3xl font-bold">Akshar Elektrotekniks</span>

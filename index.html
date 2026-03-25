@@ -57,38 +57,30 @@
 <body class="tail-container text-gray-800 overflow-x-hidden">
     
   <!-- TOP CONTACT BAR (THEME MATCHED - NAVY) -->
-<div class="bg-[#001F3F] text-white py-4">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+<div class="bg-[#001F3F] text-white py-3">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
 
-        <!-- LEFT: LOGO + NAME -->
-       <div class="flex items-center gap-3 justify-center md:justify-start">
-            <img src="logo.png" 
-                 alt="Akshar Elec Logo" 
-                 class="h-16 w-auto object-contain">
+        <!-- LEFT -->
+        <div class="flex items-center gap-3">
+            <img src="logo.png" class="h-12 md:h-14 w-auto object-contain">
 
             <div class="leading-tight">
-                <div class="text-2xl font-bold text-white">Akshar Elektrotekniks</div>
-                <div class="text-sm text-gray-300">IOT Unlimited</div>
+                <div class="text-lg md:text-xl font-bold">Akshar Elektrotekniks</div>
+                <div class="text-xs md:text-sm text-gray-300">IOT Unlimited</div>
             </div>
         </div>
 
-        <!-- RIGHT: CONTACT INFO -->
-        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-12 text-sm text-center sm:text-left">
-
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-phone text-white text-xl"></i>
-                <div>
-                    <div class="font-medium">Call us</div>
-                    <div class="text-gray-300">+91 86907 00007</div>
-                </div>
+        <!-- RIGHT -->
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-xs sm:text-sm text-center sm:text-left">
+            
+            <div class="flex items-center justify-center sm:justify-start gap-2">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 86907 00007</span>
             </div>
 
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-envelope text-white text-xl"></i>
-                <div>
-                    <div class="font-medium">E-mail us</div>
-                    <div class="text-gray-300">info@aksharelektrotekniks.com</div>
-                </div>
+            <div class="flex items-center justify-center sm:justify-start gap-2">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@aksharelektrotekniks.com</span>
             </div>
 
         </div>
@@ -97,13 +89,17 @@
             
     <!-- MAIN NAVIGATION (PERFECT ALIGNMENT) -->
 <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-4">
         <div class="flex items-center justify-between h-16">
-        
 
-            <!-- CENTER: MENU -->
-            <div class="flex-1 flex justify-center">
-                <div class="flex items-center gap-10 text-base font-medium">
+            <!-- LOGO (mobile only optional) -->
+            <div class="md:hidden font-bold text-[#001F3F]">
+                Akshar
+            </div>
+
+            <!-- MENU -->
+            <div class="hidden md:flex flex-1 justify-center">
+                <div class="flex items-center gap-6 lg:gap-10 text-sm lg:text-base font-medium">
                     <a href="#" class="nav-link text-[#001F3F]">Home</a>
                     <a href="#" class="nav-link">About Us</a>
                     <a href="#" class="nav-link">Solutions</a>
@@ -115,12 +111,11 @@
                 </div>
             </div>
 
-            <!-- RIGHT: BUTTON -->
-            <div class="flex items-center">
+            <!-- BUTTON -->
+            <div>
                 <a href="#" 
-                   class="orange-to-navy text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#002E5F] transition-all flex items-center gap-2 shadow-md">
-                    Get a Quote
-                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                   class="bg-[#001F3F] text-white px-4 md:px-6 py-2 rounded-lg text-sm md:text-base">
+                    Get Quote
                 </a>
             </div>
 
@@ -129,28 +124,27 @@
 </nav>
 
 <!-- HERO SECTION -->
-<section class="hero-bg h-screen flex items-center relative">
+<section class="hero-bg min-h-screen flex items-center relative px-4">
     <div class="relative z-10 text-white px-4 sm:px-6 md:pl-16">
         <div class="max-w-2xl">
-           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter mb-6">
+           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-bold mb-6">
                 Smart Security & Automation Solutions
             </h1>
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
+           <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
                 for your home & business
             </h2>
-            <h3 class="text-base sm:text-lg md:text-xl font-medium mb-8 text-gray-300">
+            <h3 class="text-sm sm:text-base md:text-lg mb-6 text-gray-300">
                 Protect your home, office, and commercial spaces <br> with our advanced security and automation services
             </h3>
-           <p class="text-base sm:text-lg md:text-xl mb-10 text-gray-200">
+           <p class="text-sm sm:text-base md:text-lg mb-8 text-gray-200">
                 Experience the future of smart living with seamless home automation
             </p>
             
             <div class="flex items-center gap-6">
-                <button onclick="window.scrollTo({top: 800, behavior: 'smooth'})"
-                        class="bg-white text-[#001F3F] px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-2xl font-semibold text-base md:text-lg>
-                    View More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+               <button 
+                     class="bg-white text-[#001F3F] px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-sm sm:text-lg shadow-lg">
+                     View More
+               </button>
             </div>
         </div>
     </div>

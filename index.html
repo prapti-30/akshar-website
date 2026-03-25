@@ -52,6 +52,9 @@
         .orange-to-navy {
             background-color: #001F3F;
         }
+        html {
+            scroll-behavior: smooth;
+}
     </style>
 </head>
 <body class="tail-container text-gray-800 overflow-x-hidden">
@@ -97,8 +100,8 @@
             <div class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 text-sm sm:text-base font-medium">
 
                 <a href="#" class="nav-link text-[#001F3F]">Home</a>
-                <a href="#" class="nav-link">About Us</a>
-                <a href="#" class="nav-link">Solutions</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
                 <a href="#" class="nav-link">Contact</a>
                 <a href="#" class="nav-link">Blog</a>
 
@@ -144,14 +147,15 @@
     </div>
     
     <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 flex flex-col items-center text-white/70">
-        <div class="text-xs tracking-widest mb-2">SCROLL</div>
-        <i class="fa-solid fa-chevron-down animate-bounce"></i>
+  <div onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"
+     class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/70 cursor-pointer">
+      <div class="text-xs tracking-widest mb-2">SCROLL</div>
+    <i class="fa-solid fa-chevron-down animate-bounce"></i>
     </div>
 </section>
 
     <!-- WELCOME SECTION -->
-    <section class="py-24 bg-white">
+   <section id="about" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
@@ -203,7 +207,7 @@
 </section>
 
     <!-- LEADING HEADER + ALL SOLUTIONS -->
-    <section class="bg-zinc-100 py-16">
+   <section id="solutions" class="bg-zinc-100 py-16">
         <div class="max-w-7xl mx-auto px-6 text-center">
           <h2 class="text-4xl md:text-5xl font-bold text-[#001F3F] leading-tight">
     Building Secure, Smart, and Future-Ready Environments

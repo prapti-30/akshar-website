@@ -149,24 +149,6 @@
 <footer class="bg-zinc-900 text-white py-10 text-center">
     <p class="text-gray-400">© 2026 Akshar Elec. All rights reserved.</p>
 </footer>
-<script>
-document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let formData = new FormData(this);
-
-    fetch(this.action, {
-        method: "POST",
-        body: formData
-    })
-    .then(response => {
-        alert("Form submitted successfully!");
-    })
-    .catch(error => {
-        alert("Error submitting form");
-    });
-});
-</script>
 
 </body>
 </html>

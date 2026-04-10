@@ -270,7 +270,7 @@ document.querySelector("#quoteForm").addEventListener("submit", async function(e
     };
 
     try {
-        const res = await fetch(BACKEND_URL + "/send-quotation", {
+       const res = await fetch("https://akshar-backend-ud8r.onrender.com/send-quotation", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

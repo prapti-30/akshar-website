@@ -233,8 +233,10 @@
   </div>
 </footer>
 <script>
-const BACKEND_URL = "https://akshar-backend-ud8r.onrender.com";
-
+const BACKEND_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "https://akshar-backend-ud8r.onrender.com";
 async function wakeServer() {
     try {
         await fetch(BACKEND_URL);
